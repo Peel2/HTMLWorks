@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize HTML Form Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-content">
+            <h3>Welcome to Coding Design</h3>
+            <p>If you're new here be sure to hit that subscribe button.</p>
+            <img src="./images/Subscribe.png" class="sub_img" alt="img_subscribe">
+        </div>
+        <form action="">
+            <h3>Custom Checkbox, radio, switch <span class="episode">Episode 04</span></h3>
+            <div class="user">
+                <img src="./images/user.svg" alt="ic_user" class="icon">
+                <input type="text" spellcheck="false" autofocus class="input_field" placeholder="User Name">
+            </div>
+            <div class="password">
+                <img src="./images/lock.svg" alt="ic_lock" class="icon">
+                <input type="password" class="input_field input_field-password" placeholder="Password">
+                <img src="./images/eye.svg" alt="ic_visibility" class="icon icon-eye">
+                <span class="msg"></span>
+            </div>
+
+            <!-- Custom Checkbox -->
+            <div class="label_checkbox">
+                <input type="checkbox" name="" id="password_visibility">
+                <label for="password_visibility">Show Password</label>
+            </div>
+
+            <!-- Custom Radio Button -->
+            <div class="label_radio">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+            </div>
+
+            <!-- Switch -->
+            <label for="slider" class="switch">
+                <input type="checkbox" id="slider">
+                <div class="slider">
+
+                </div>
+            </label>
+
+            <input type="submit" value="SIGN UP">
+
+        </form>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
